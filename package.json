@@ -1,0 +1,34 @@
+{
+  "name": "@dlghq/dialog-webhook",
+  "version": "0.0.0",
+  "description": "Easy to use CLI tool for dialog webhooks",
+  "main": "src/index.js",
+  "files": ["src", "bin"],
+  "bin": {
+    "dialog-webhook": "./bin/dialog-webhook"
+  },
+  "scripts": {
+    "test": "exit 0",
+    "preversion": "npm test",
+    "postversion": "npm publish",
+    "postpublish": "git push --follow-tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dialogs/dialog-webhook.git"
+  },
+  "keywords": [
+    "dialog",
+    "webhook",
+    "integration"
+  ],
+  "author": "Nikita Gusakov <gusnkt@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/dialogs/dialog-webhook/issues"
+  },
+  "homepage": "https://github.com/dialogs/dialog-webhook#readme",
+  "dependencies": {
+    "minimist": "^1.2.0"
+  }
+}

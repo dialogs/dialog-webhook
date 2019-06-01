@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+
+const minimist = require('minimist');
+const webhook = require('../src');
+
+const args = minimist(process.argv.slice(2));
+
+webhook(args)
+  .catch((error) => {
+    console.error(error.message);
+    process.exit(1);
+  });
